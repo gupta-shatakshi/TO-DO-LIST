@@ -1,0 +1,98 @@
+body{
+    background-image: url("back.jfif");
+    /* background-color: rgb(66, 66, 66); */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 1500px 1000px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.outer-box{
+    width: 40%;
+}
+.container{
+    background-color: rgb(248, 212, 245);
+    padding: 5%;
+    box-sizing: content-box;  
+    box-shadow: 2px 2px 2px whitesmoke;
+    padding-bottom: 50px;
+}
+#input-work{
+    margin-left: 38px;
+    width: 76%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: transparent;
+    border-radius: 4px;
+}
+#input-work:hover{
+    background-color: rgba(117, 216, 158, 0.425);
+}
+#add{
+    width: 14%;
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    border: transparent;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(40, 143, 0);
+   
+}
+#add:hover{
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 4px;
+}
+#delAll{
+    float: right;
+    border: transparent;
+    border-radius: 4px;
+    background-color: rgba(117, 231, 231, 0.425);
+    width: 30%;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+
+}
+#delAll:hover{
+    text-decoration: underline;
+    /* color: rgb(255, 255, 255); */
+    background-color: rgb(255, 31, 31);
+}
+h1{
+    padding-top: 2%;
+    color: whitesmoke;
+}
+li{
+    padding: 2%;
+    font-size: large;
+    color: rgb(0, 0, 0);
+}
+
+li:nth-child(even){
+    background-color: rgba(233, 233, 233, 0.425);
+}
+li:nth-child(odd){
+    background-color: rgba(196, 193, 193, 0.425);
+}
+li:hover{
+    background-color: rgba(117, 216, 158, 0.425);
+}
+.fa-trash{
+    cursor: pointer;
+    float: right;
+    width: 14%;
+    background-color: transparent;
+    border: transparent;
+    color: rgb(197, 17, 17);
+    font-weight: bold;
+}
+.fa-trash:hover{
+    background-color: red;
+    color: white;
+    padding: 10px 12px 10px 12px;
+    transform: translateY(-9px) ;
+    border-radius: 4px;
+}
