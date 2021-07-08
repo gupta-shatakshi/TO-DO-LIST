@@ -9,14 +9,11 @@ function addingList(e){
 
     var newspan = document.createElement("span");
 
-    // newspan.id = "span-id";
     newspan.style.width = "80%";
     newli.appendChild(newspan);
 
     var newbtn = document.createElement("button");
     newbtn.className = "fa fa-trash";
-    
-    // newbtn.appendChild(document.createTextNode(""));
    
     newli.appendChild(newbtn);
 
@@ -32,18 +29,37 @@ function addingList(e){
     document.getElementById("input-work").value = "";
 }
 
+// deleting a list
 document.querySelector('body').addEventListener('click', function(event) {
-    if (event.target.className.toLowerCase() === 'fa fa-trash') {
+    if (event.target.className === 'fa fa-trash') {
         var li = event.target.parentElement.parentElement;
         li.removeChild(event.target.parentElement);
     }
   });
 
-
-let allList = document.getElementById("ul-list");
+// clear all
+var allList = document.getElementById("ul-list");
 
 delAll.addEventListener('click', function(){
     while(allList.firstChild){
         allList.removeChild(allList.firstChild);
     }
 })
+
+//search box
+var searchbox = document.getElementById("search");
+searchbox.addEventListener('input', function(){
+    
+    var searchVal = document.getElementById("search").value;
+    searchVal = searchVal.toLowerCase();
+    var newliItemArr = document.getElementsByClassName("new-list-item");
+    for(let i=0; i<newliItemArr.length; i++){
+        
+        if(newliItemArr[i].innerText.toLowerCase().includes(searchVal)){
+            newliItemArr[i].style.display = "";
+        }
+        else{
+            newliItemArr[i].style.display = "none";
+        } 
+}
+});
