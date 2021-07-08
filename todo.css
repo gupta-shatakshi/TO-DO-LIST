@@ -96,3 +96,21 @@ li:hover{
     transform: translateY(-9px) ;
     border-radius: 4px;
 }
+#search-box{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+}
+.fa-search{
+    padding: 7px 7px 7px 7px;
+    margin-left: -30px;
+}
+#search{
+    padding: 7px 7px 7px 7px;
+    background-color: rgb(248, 212, 245);
+    color: rgb(0, 0, 0);
+}
+#search:hover{
+    background-color: rgba(178, 224, 198, 0.425);
+}
