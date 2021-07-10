@@ -44,6 +44,9 @@ delAll.addEventListener('click', function(){
     while(allList.firstChild){
         allList.removeChild(allList.firstChild);
     }
+    document.getElementById("input-work").value = "";
+    document.getElementById("search").value = "";
+
 })
 
 //search box
